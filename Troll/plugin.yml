@@ -1,0 +1,71 @@
+name: Troll
+main: com.idlebrits.Troll.Troll
+version: 1.0
+author: Grimdeathkin
+commands:
+    trollreload:
+        description: Reloads the config file.
+    sendcustom:
+        description: Sends the custom message from the config file.
+    freeze:
+        description: Freezes a player in place.
+    burn:
+        description: Sets fire to a player.
+    explode:
+        description: Blows up a player.
+    poison:
+        description: Poisons a Player.
+    wither:
+        description: Withers a Player.
+    trollface:
+        description: Trollface...
+permissions:
+    Troll.*:
+        description: Gives access to all Troll commands.
+        children:
+            Troll.reload: true
+            Troll.sendcustom.self: true
+            Troll.sendcustom.other: true
+            Troll.freeze.self: true
+            Troll.freeze.other: true
+            Troll.burn.self: true
+            Troll.burn.other: true
+            Troll.explode.self: true
+            Troll.explode.other: true
+            Troll.poison.self: true
+            Troll.poison.other: true
+            Troll.wither.self: true
+            Troll.wither.other: true
+            Troll.trollface.self: true
+            Troll.trollface.other: true
+    Troll.sendcustom:
+        children:
+            Troll.sendcustom.self: true
+            Troll.sendcustom.other: true
+    Troll.freeze:
+        children:
+            Troll.freeze.self: true
+            Troll.freeze.other: true
+    Troll.burn:
+        children:
+            Troll.burn.self: true
+            Troll.burn.other: true
+    Troll.explode:
+        children:
+            Troll.explode.self: true
+            Troll.explode.other: true
+    Troll.poison:
+        children:
+            Troll.poison.self: true
+            Troll.poison.other: true
+    Troll.wither:
+        children:
+            Troll.wither.self: true
+            Troll.wither.other: true
+    Troll.trollface:
+        children:
+            Troll.trollface.self: true
+            Troll.trollface.other: true
+      
+            
+    
